@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 17%;
+    background: linear-gradient(to right bottom, rgb(255, 255, 255), rgba(0, 0, 0, 0.652));
+}
+header a{
+    text-decoration: none;
+}
+header .title-logo{
+    font-size: 1.4rem;
+    color: rebeccapurple;
+    font-weight: 900;
+}
+header .title-logo:hover{
+    text-decoration: underline solid 2px blue;
+}
+#menu-icon{
+    font-size: 3rem;
+    color: rebeccapurple;
+    display: none;
+}
+.navigation-buttons a{
+    font-size: 1.1rem;
+    color: black;
+    margin-left: 6vh;
+    font-weight: 600;
+}
+.navigation-buttons a:hover,
+.navigation-buttons .active
+{
+    color: rebeccapurple;
+    text-decoration: underline solid 5px rebeccapurple;
+}
+
+.main-container{
+    padding: 9vh 15%;
+}
+.manga-container{
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 3vh;
+    padding-top: 1vh;
+    font-weight: 500;
+}
+.manga-text{
+    cursor: pointer;
+}
+.manga-container img{
+    height: 35vh;
+}
+.manga-container a{
+    text-decoration: none;
+    color: black;
+}
+.manga-container .chapters{
+    color: gray;
+}
+
+.clicker-container{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.679);
+    color: white;
+    top: 10vh;
+    left: 10vh;
+    height: 70vh;
+    display: flex;
+}
+.clicker-container img{
+    opacity: 80%;
+}
+.about-manga{
+    width: 65%;
+}
+.about-manga h1{
+    margin-left: 2vh;
+}
+.about-manga p{
+    margin-top: 6vh;
+    margin-left: 2vh;
+}
+.read-more-container{
+    position: relative;
+    margin-top: 10vh;
+    padding-left: 2vh;
+    width: fit-content;
+}
+.read-more-container i{
+    font-size: 1.4rem;
+    position: absolute;
+    top: 0.3vh;
+    left: 15vh;
+}
+.bx{
+    position: absolute;
+    top: 2vh;
+    right: 4vh;
+    font-size: 2.4rem;
+    color: white;
+}
+.read-more-container a{
+    text-decoration: none;
+    color: white;
+}
+.read-more-container:hover a{
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 767px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header .title-logo{
+        font-size: 1rem;
+        color: rebeccapurple;
+        font-weight: 900;
+    }
+
+    #menu-icon{
+        display: block;
+        font-size: 2rem;
+        margin-left: 14vh;
+    }
+    .navigation-buttons{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 7vh;
+        background: linear-gradient(to right bottom, rgb(255, 255, 255), rgba(0, 0, 0, 0.652));
+        display: none;
+    }
+    .navigation-buttons a{
+        display: block;
+        font-size: 1rem;
+        margin-left: 1vh;
+    }
+    .navigation-buttons a:hover,
+    .navigation-buttons .active
+    {
+        color: rebeccapurple;
+        text-decoration: underline solid 2px rebeccapurple;
+    }
+    .navigation-buttons.active{
+        display: block;
+    }
+
+    .main-container{
+        padding: 1vh 4%;
+    }
+
+    .manga-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(16, 1fr);
+        gap: 1vh;
+        font-weight: 500;
+    }
+
+    .manga-container img{
+        height: 16vh;
+    }
+    .manga-text p{
+        font-size: 0.6rem;
+    }
+}
