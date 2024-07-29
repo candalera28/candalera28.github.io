@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: var(--primary-color);
+}
+:root{
+    --primary-color: white;
+    --secondary-color: black;
+    --third-color: gray;
+}
+.dark-theme{
+    --primary-color: black;
+    --secondary-color: white;
+    --third-color: gray;
+}
+header{
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 17%;
+    position: relative;
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+#menu-icon{
+    font-size: 3rem;
+    color: rebeccapurple;
+    display: none;
+}
+header a{
+    text-decoration: none;
+}
+header .title-logo{
+    font-size: 1.4rem;
+    color: rebeccapurple;
+    font-weight: 900;
+}
+header .title-logo:hover{
+    text-decoration: underline solid 2px blue;
+}
+.navigation-buttons a{
+    font-size: 1.1rem;
+    color: black;
+    margin-left: 6vh;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+.navigation-buttons a:hover,
+.navigation-buttons .active
+{
+    color: rebeccapurple;
+    text-decoration: underline solid 5px rebeccapurple;
+}
+#light{
+    font-size: 1.5rem;
+    position: absolute;
+    right: 26vh;
+    top: 2vh;
+    width: fit-content;
+    display: none;
+    cursor: pointer;
+}
+#dark{
+    font-size: 1.5rem;
+    position: absolute;
+    right: 36vh;
+    top: 2vh;
+    width: fit-content;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+.home-container-background{
+    background-image: url(home-page-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 87vh;
+    padding-top: 20vh;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 240px 220px 1000px rgba(0, 0, 0, 0.801);
+}
+.text-container{
+    text-align: center;
+    line-height: 1.2;
+    color: white;
+}
+.text-container p{
+    font-size: 1.2rem;
+}
+.text-container span{
+    color: rebeccapurple;
+    font-size: 8rem;
+    font-weight: 900;
+}
+.blog-container{
+    text-align: center;
+}
+.blog-container p {
+    color: var(--secondary-color);
+}
+.blog-container h2{
+    color: rebeccapurple;
+}
+
+.container2{
+    height: 60vh;
+    margin-top: 4vh;
+}
+.container2 h2{
+    display: inline-flex;
+    position: absolute;
+    margin-left: 2vh;
+    color: var(--secondary-color);
+}
+.vertical-line{
+    height: 5vh;
+    width: 1%;
+    border-radius: 10px 10px 10px 10px;
+    display: inline-flex;
+    background-color: rebeccapurple;
+    margin-left: 2vh;
+}
+.manga-row1{
+    padding-left: 10vh;
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    gap: 3vh;
+    overflow: scroll;
+}
+.manga-row1 img{
+    height: 40vh;
+}
+.manga-row1 p{
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+.manga-row1 .chapters{
+    color: var(--third-color);
+}
+.manga-row1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.container3{
+    height: 60vh;
+    margin-top: 4vh;
+}
+.container3 h2{
+    display: inline-flex;
+    position: absolute;
+    margin-left: 2vh;
+    color: var(--secondary-color);
+}
+.manga-row2{
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    overflow: scroll;
+    gap: 3vh;
+    padding-left: 10vh;
+}
+.manga-row2 p{
+    color: var(--secondary-color);
+}
+.manga-row2 img{
+    height: 40vh;
+}
+.manga-row2 .chapters{
+    color: var(--third-color);
+}
+
+.container4{
+    height: 60vh;
+    margin-top: 4vh;
+}
+.container4 h2{
+    display: inline-flex;
+    position: absolute;
+    margin-left: 2vh;
+    color: var(--secondary-color);
+}
+.manga-row3{
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    gap: 3vh;
+    overflow: scroll;
+    padding-left: 10vh;
+}
+.manga-row3 p {
+    color: var(--secondary-color);
+}
+.manga-row3 .chapters{
+    color: var(--third-color);
+}
+.manga-row3 img{
+    height: 40vh;
+}
+
+.container5{
+    height: 60vh;
+    margin-top: 2vh;
+}
+.container5 h2{
+    display: inline-flex;
+    position: absolute;
+    margin-left: 3vh;
+    color: var(--secondary-color);
+}
+.manga-row4{
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    gap: 3vh;
+    overflow: scroll;
+    padding-left: 10vh;
+}
+.manga-row4 p {
+    color: var(--secondary-color);
+}
+.manga-row4 .chapters{
+    color: var(--third-color);
+}
+.manga-row4 img{
+    height: 40vh;
+}
+.manga-row4 a{
+    text-decoration: none;
+    color: black;
+}
+.container6{
+    height: auto;
+    margin-top: 10vh;
+}
+.container6 h2{
+    display: inline-flex;
+    position: absolute;
+    margin-left: 2vh;
+    color: var(--secondary-color);
+}
+.manga-rankings{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 5vh;
+    gap: 3vh;
+}
+.manga-rankings img{
+    height: 30vh;
+}
+.tops-container{
+    display: flex;
+    width: fit-content;
+}
+.numbers{
+    font-size: 5rem;
+    color: gray;
+    margin-left: 2vh;
+}
+.centralized-text-numbers{
+    display: flex;
+    align-items: center;
+    gap: 2.6vh;
+}
+.title-genre p{
+    line-height: 2;
+    color: var(--secondary-color);
+}
+
+
+footer{
+    margin-top: 10vh;
+    height: 20vh;
+    color: white;
+    padding: 2vh 5%;
+    text-align: center;
+}
+.socmeds span{
+    font-weight: 900;
+    font-size: 1.7rem;
+    color: rebeccapurple;
+}
+.socmeds a{
+    font-size: 1.6rem;
+    color: white;
+    background-color: gray;
+    border-radius: 4px;
+}
+.copyright{
+    color: gray;
+    margin-top: 3vh;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+
+
+@media only screen and (max-width: 767px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header .title-logo{
+        font-size: 1rem;
+        color: rebeccapurple;
+        font-weight: 900;
+    }
+    #menu-icon{
+        display: block;
+        font-size: 2rem;
+        margin-left: 12vh;
+    }
+    .navigation-buttons{
+        position: absolute;
+        width: 100%;
+        height: 16vh;
+        left: 0;
+        top: 7vh;
+        background-color: var(--primary-color);
+        display: none;
+    }
+    .navigation-buttons.active{
+        display: block;
+    }
+    .navigation-buttons a{
+        display: block;
+        font-size: 1rem;
+        margin-left: 1vh;
+    }
+    .navigation-buttons a:hover,
+    .navigation-buttons .active{
+        text-decoration: underline solid 2px rebeccapurple;
+    }
+    #light{
+        font-size: 1.4rem;
+        left: 2vh;
+        top: 11vh;
+        cursor: pointer;
+        width: fit-content;
+    }
+    #dark{
+        font-size: 1.4rem;
+        left: 2vh;
+        top: 11vh;
+        cursor: pointer;
+        width: fit-content;
+    }
+    .home-container-background{
+        width: 100%;
+        height: 80vh;
+        box-shadow: inset 50px 60px 140px black;
+        padding-top: 27vh;
+    }
+    .text-container p{
+        font-size: 0.8rem;
+    }
+    .text-container span{
+        font-size: 2.6rem;
+        font-weight: 900;
+    }
+    .blog-container h2{
+        font-size: 0.8rem;
+    }
+    .blog-container p{
+        font-size: 0.5rem;
+    }
+
+
+    .container2{
+        height: 35vh;
+    }
+    .container2 h2{
+        font-size: 0.8rem;
+        margin-left: 1vh;
+    }
+    .vertical-line{
+        height: 3vh;
+        width: 2%;
+    }
+    .manga-row1{
+        padding-left: 2vh;
+        gap: 1vh;
+    }
+    .manga-row1 img{
+        height: 20vh;
+    }
+    .manga-row1 p{
+        font-size: 0.6rem;
+    }
+
+    .container3{
+        height: 35vh;
+    }
+    .container3 h2{
+        font-size: 0.8rem;
+        margin-left: 1vh;
+    }
+    .manga-row2{
+        padding-left: 2vh;
+        gap: 1vh;
+    }
+    .manga-row2 img{
+        height: 20vh;
+    }
+    .manga-row2 p{
+        font-size: 0.6rem;
+    }
+
+    .container4{
+        height: 35vh;
+    }
+    .container4 h2{
+        font-size: 0.8rem;
+        margin-left: 1vh;
+    }
+    .manga-row3{
+        padding-left: 2vh;
+        gap: 1vh;
+    }
+    .manga-row3 img{
+        height: 20vh;
+    }
+    .manga-row3 p{
+        font-size: 0.6rem;
+    }
+
+    .container5{
+        height: 35vh;
+    }
+    .container5 h2{
+        font-size: 0.8rem;
+        margin-left: 1vh;
+    }
+    .manga-row4{
+        padding-left: 2vh;
+        gap: 1vh;
+    }
+    .manga-row4 img{
+        height: 20vh;
+    }
+    .manga-row4 p{
+        font-size: 0.6rem;
+    }
+
+    .container6{
+        height: auto;
+        margin-top: 1vh;
+    }
+    .container6 h2{
+        font-size: 0.8rem;
+        margin-left: 1vh;
+    }
+    .container6 h1{
+        font-size: 3rem;
+        margin-left: 1vh;
+    }
+    .manga-rankings{
+        padding-left: 2vh;
+    }
+    .manga-rankings img{
+        height: 20vh;
+    }
+    .centralized-text-numbers{
+        gap: 1vh;
+    }
+    .title-genre p{
+        font-size: 0.6rem;
+        width: max-content;
+    }
+    .manga-rankings{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .socmeds span{
+        font-size: 1rem;
+    }
+    .socmeds a{
+        font-size: 1rem;
+    }
+    .copyright{
+        font-weight: 400;
+        font-size: 0.5rem;
+        margin-top: 5vh;
+    }
+}
